@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Carousel" customModuleProvider="target">
+            <connections>
+                <outlet property="cardCollectionView" destination="gAT-gO-Yi2" id="qmB-Ql-rZc"/>
+                <outlet property="discoverButton" destination="fpn-p9-BId" id="Cjp-KG-dnB"/>
+                <outlet property="editProfileButton" destination="SYT-7s-eDV" id="yjE-hw-epW"/>
+                <outlet property="profileImageView" destination="NqG-DV-A92" id="122-mV-OU0"/>
+                <outlet property="titleLabel" destination="LfY-SR-20q" id="77V-Qd-qlg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Los3" translatesAutoresizingMaskIntoConstraints="NO" id="NqG-DV-A92">
+                    <rect key="frame" x="340" y="60" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="fGF-Nu-BpB"/>
+                        <constraint firstAttribute="width" constant="50" id="o5K-0H-P5b"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_Interest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LfY-SR-20q">
+                    <rect key="frame" x="24" y="68" width="142" height="42"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hJE-QA-ACr">
+                    <rect key="frame" x="24" y="126" width="366" height="2"/>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="cTg-XP-znD"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpn-p9-BId">
+                    <rect key="frame" x="24" y="666" width="60" height="30"/>
+                    <state key="normal" title="Discover"/>
+                    <connections>
+                        <action selector="discoverButton:" destination="-1" eventType="touchUpInside" id="n3r-JR-cnK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYT-7s-eDV">
+                    <rect key="frame" x="316" y="666" width="74" height="30"/>
+                    <state key="normal" title="Edit profile"/>
+                    <connections>
+                        <action selector="editProfileButton:" destination="-1" eventType="touchUpInside" id="Wd8-Gt-Aex"/>
+                    </connections>
+                </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="gAT-gO-Yi2">
+                    <rect key="frame" x="0.0" y="144" width="414" height="514"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="30" minimumInteritemSpacing="20" id="ppt-1b-Vnk">
+                        <size key="itemSize" width="200" height="400"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gAT-gO-Yi2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5cI-vv-Va7"/>
+                <constraint firstAttribute="trailing" secondItem="SYT-7s-eDV" secondAttribute="trailing" constant="24" id="5sW-Mi-5Gz"/>
+                <constraint firstAttribute="bottom" secondItem="SYT-7s-eDV" secondAttribute="bottom" constant="40" id="7fC-SF-i29"/>
+                <constraint firstItem="LfY-SR-20q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="24" id="9ct-gI-Dj1"/>
+                <constraint firstItem="fpn-p9-BId" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="24" id="F7r-8G-qxL"/>
+                <constraint firstItem="fpn-p9-BId" firstAttribute="top" secondItem="gAT-gO-Yi2" secondAttribute="bottom" constant="8" id="KLl-ol-iqY"/>
+                <constraint firstItem="hJE-QA-ACr" firstAttribute="top" secondItem="LfY-SR-20q" secondAttribute="bottom" constant="16" id="UeN-Zc-vry"/>
+                <constraint firstAttribute="bottom" secondItem="fpn-p9-BId" secondAttribute="bottom" constant="40" id="Wpc-RN-5ur"/>
+                <constraint firstItem="hJE-QA-ACr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="24" id="c9Z-M8-FL4"/>
+                <constraint firstItem="NqG-DV-A92" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="fDE-n2-yCs"/>
+                <constraint firstAttribute="trailing" secondItem="gAT-gO-Yi2" secondAttribute="trailing" id="hn2-nk-Lsi"/>
+                <constraint firstAttribute="trailing" secondItem="hJE-QA-ACr" secondAttribute="trailing" constant="24" id="iIC-gU-25E"/>
+                <constraint firstAttribute="trailing" secondItem="NqG-DV-A92" secondAttribute="trailing" constant="24" id="mbq-MA-nm9"/>
+                <constraint firstItem="gAT-gO-Yi2" firstAttribute="top" secondItem="hJE-QA-ACr" secondAttribute="bottom" constant="16" id="pB2-p3-be4"/>
+                <constraint firstItem="LfY-SR-20q" firstAttribute="bottom" secondItem="NqG-DV-A92" secondAttribute="bottom" id="xPa-h3-853"/>
+            </constraints>
+            <point key="canvasLocation" x="-355.07246376811599" y="58.695652173913047"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Los3" width="960" height="1280"/>
+    </resources>
+</document>
